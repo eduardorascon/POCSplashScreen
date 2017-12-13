@@ -16,6 +16,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "default"
+    productFlavors {
+        red {
+            applicationIdSuffix "red"
+        }
+        green {
+            applicationIdSuffix "green"
+        }
+    }
 }
 
 dependencies {
