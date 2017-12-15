@@ -9,6 +9,6 @@
     </style>
     <!-- Splash screen theme -->
     <style name="AppTheme.Launcher">
-        <item name="android:windowBackground">@drawable/ic_launcher_background</item>
+        <item name="android:windowBackground">@android:color/holo_green_dark</item>
     </style>
 </resources>
