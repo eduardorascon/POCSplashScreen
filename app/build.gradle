@@ -24,12 +24,14 @@ android {
         silver {
             dimension "plan"
         }
-        bronce {
+        bronze {
             dimension "plan"
         }
         hogaza {
             dimension "client"
         }
+    }
+    sourceSets {
     }
 }
 
