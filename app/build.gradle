@@ -16,13 +16,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    flavorDimensions "default"
+    flavorDimensions "client", "plan"
     productFlavors {
-        red {
-            applicationIdSuffix "red"
+        gold {
+            dimension "plan"
         }
-        green {
-            applicationIdSuffix "green"
+        silver {
+            dimension "plan"
+        }
+        bronce {
+            dimension "plan"
+        }
+        hogaza {
+            dimension "client"
         }
     }
 }
