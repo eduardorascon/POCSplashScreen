@@ -27,6 +27,9 @@ android {
         bronze {
             dimension "plan"
         }
+        tesselapps {
+            dimension "client"
+        }
         hogaza {
             dimension "client"
         }
