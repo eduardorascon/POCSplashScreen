@@ -33,9 +33,6 @@ android {
         hogaza {
             dimension "client"
         }
-        berlin {
-            dimension "client"
-        }
     }
     sourceSets {
     }
