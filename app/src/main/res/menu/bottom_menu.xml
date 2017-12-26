@@ -7,4 +7,10 @@
         android:icon="@drawable/ic_favorite_white_24dp"
         android:title="Favoritos"
         app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/action_prueba"
+        android:enabled="false"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Prueba"></item>
 </menu>
