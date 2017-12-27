@@ -6,11 +6,18 @@
         android:enabled="true"
         android:icon="@drawable/ic_favorite_white_24dp"
         android:title="Favoritos"
-        app:showAsAction="ifRoom"></item>
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_prueba"
         android:enabled="false"
         android:icon="@drawable/ic_launcher_foreground"
-        android:title="Prueba"></item>
+        android:title="Prueba" />
+
+    <item
+        android:id="@+id/action_prueba2"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        android:title="Prueba 2" />
+
 </menu>
