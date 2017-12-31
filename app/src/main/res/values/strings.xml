@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">POCSplashScreen Green</string>
+    <string name="title_favorites">Favorites</string>
 </resources>
