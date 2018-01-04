@@ -10,6 +10,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="bottom"
         app:itemBackground="@color/colorAccent"
         app:itemIconTint="@drawable/bottom_nav_item_color_state"
         app:itemTextColor="@drawable/bottom_nav_item_color_state"
