@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">POCSplashScreen Green</string>
+    <string name="title_favorites">Favorites</string>
+
+    <string name="hello_map_fragment">Map Fragment</string>
+    <string name="hello_products_fragment">Products Fragment</string>
 </resources>
