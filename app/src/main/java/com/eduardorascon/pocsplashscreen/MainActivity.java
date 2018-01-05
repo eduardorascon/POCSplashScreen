@@ -33,12 +33,15 @@ public class MainActivity extends AppCompatActivity {
                         switch (item.getItemId()) {
                             case R.id.action_favorites:
                                 toolbar.setTitle(getString(R.string.title_favorites));
+                                break;
                             case R.id.action_prueba:
-                                toolbar.setTitle(getString(R.string.title_favorites));
+                                toolbar.setTitle(getString(R.string.hello_products_fragment));
+                                break;
                             case R.id.action_prueba2:
-                                toolbar.setTitle(getString(R.string.title_favorites));
-                                fragment = new MapFragment();
-                                loadFragment(fragment);
+                                toolbar.setTitle(getString(R.string.hello_map_fragment));
+                                break;
+                            //fragment = new MapFragment();
+                            //loadFragment(fragment);
                         }
 
                         return true;
