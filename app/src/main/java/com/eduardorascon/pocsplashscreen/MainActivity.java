@@ -1,5 +1,6 @@
 package com.eduardorascon.pocsplashscreen;
 
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -10,7 +11,7 @@ import android.os.Bundle;
 import android.view.FrameMetrics;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MapFragment.OnFragmentInteractionListener {
 
     private ActionBar toolbar;
 
@@ -39,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case R.id.action_prueba2:
                                 toolbar.setTitle(getString(R.string.hello_map_fragment));
+                                fragment = new MapFragment();
+                                loadFragment(fragment);
                                 break;
-                            //fragment = new MapFragment();
-                            //loadFragment(fragment);
                         }
 
                         return true;
@@ -56,5 +57,10 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.frame_container, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }
