@@ -6,5 +6,7 @@
     <string name="title_chat">Chat</string>
 
     <string name="hello_map_fragment">Map Fragment</string>
+    <string name="hello_chat_fragment">Chat Fragment</string>
     <string name="hello_products_fragment">Products Fragment</string>
+    <string name="hello_favorites_fragment">Products Fragment</string>
 </resources>

@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity implements MapFragment.OnFra
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         Fragment fragment;
                         switch (item.getItemId()) {
-                            case R.id.action_favorites:
+                            case R.id.action_products:
                                 toolbar.setTitle(getString(R.string.title_favorites));
                                 break;
-                            case R.id.action_prueba:
+                            case R.id.action_chat:
                                 toolbar.setTitle(getString(R.string.hello_products_fragment));
                                 break;
-                            case R.id.action_prueba2:
+                            case R.id.action_map:
                                 toolbar.setTitle(getString(R.string.hello_map_fragment));
                                 fragment = new MapFragment();
                                 loadFragment(fragment);
