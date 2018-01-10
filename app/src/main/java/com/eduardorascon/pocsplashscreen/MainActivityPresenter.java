@@ -2,7 +2,9 @@ package com.eduardorascon.pocsplashscreen;
 
 public class MainActivityPresenter {
 
-    public MainActivityPresenter(MainActivityView view){
+    private MainActivityView view;
 
+    public MainActivityPresenter(MainActivityView view){
+        this.view = view;
     }
 }
