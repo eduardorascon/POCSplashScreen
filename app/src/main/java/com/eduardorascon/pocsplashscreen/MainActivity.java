@@ -11,9 +11,10 @@ import android.os.Bundle;
 import android.view.FrameMetrics;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements MapFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements MainActivityView, MapFragment.OnFragmentInteractionListener {
 
     private ActionBar toolbar;
+    private MainActivityPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements MapFragment.OnFra
 
         toolbar = getSupportActionBar();
         toolbar.setTitle("Test");
+
+        presenter = new MainActivityPresenter(this);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(
