@@ -33,6 +33,9 @@ android {
         hogaza {
             dimension "client"
         }
+        burritomx {
+            dimension "client"
+        }
     }
     sourceSets {
     }
