@@ -12,7 +12,7 @@ import android.os.Bundle;
 import android.view.FrameMetrics;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements MainActivityView, MapFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements MainActivityView {
 
     private ActionBar toolbar;
     private MainActivityPresenter presenter;
@@ -54,11 +54,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityView,
                     }
                 }
         );
-
-    }
-
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
     }
 }
