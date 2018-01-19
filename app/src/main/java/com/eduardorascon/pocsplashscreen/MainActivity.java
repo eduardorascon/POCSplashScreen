@@ -56,4 +56,19 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
         );
 
     }
+
+    @Override
+    public void showMap() {
+
+    }
+
+    @Override
+    public void showProducts() {
+
+    }
+
+    @Override
+    public void showChat() {
+
+    }
 }
