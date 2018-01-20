@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
 
                         switch (item.getItemId()) {
                             case R.id.action_products:
-                                toolbar.setTitle(getString(R.string.title_favorites));
+                                toolbar.setTitle(getString(R.string.title_products));
                                 break;
                             case R.id.action_chat:
-                                toolbar.setTitle(getString(R.string.hello_products_fragment));
+                                toolbar.setTitle(getString(R.string.hello_chat_fragment));
                                 break;
                             case R.id.action_map:
                                 toolbar.setTitle(getString(R.string.hello_map_fragment));
