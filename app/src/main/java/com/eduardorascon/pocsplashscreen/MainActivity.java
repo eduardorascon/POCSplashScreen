@@ -39,10 +39,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
                                 toolbar.setTitle(getString(R.string.hello_chat_fragment));
                                 break;
                             case R.id.action_map:
-                                toolbar.setTitle(getString(R.string.hello_map_fragment));
-                                MapFragment mapFragment = new MapFragment();
-                                FragmentManager manager = getSupportFragmentManager();
-                                manager.beginTransaction().replace(R.id.frame_container, mapFragment).commit();
+                                presenter.showMap();
                                 break;
                         }
 
@@ -55,7 +52,10 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
 
     @Override
     public void showMap() {
-
+        toolbar.setTitle(getString(R.string.hello_map_fragment));
+        MapFragment mapFragment = new MapFragment();
+        FragmentManager manager = getSupportFragmentManager();
+        manager.beginTransaction().replace(R.id.frame_container, mapFragment).commit();
     }
 
     @Override
