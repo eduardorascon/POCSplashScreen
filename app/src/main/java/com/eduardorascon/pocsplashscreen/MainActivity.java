@@ -1,15 +1,11 @@
 package com.eduardorascon.pocsplashscreen;
 
-import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.FrameMetrics;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity implements MainActivityView {
@@ -44,9 +40,9 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
                                 break;
                             case R.id.action_map:
                                 toolbar.setTitle(getString(R.string.hello_map_fragment));
-                                Map2Fragment map2Fragment = new Map2Fragment();
+                                MapFragment mapFragment = new MapFragment();
                                 FragmentManager manager = getSupportFragmentManager();
-                                manager.beginTransaction().replace(R.id.frame_container, map2Fragment).commit();
+                                manager.beginTransaction().replace(R.id.frame_container, mapFragment).commit();
                                 break;
                         }
 
