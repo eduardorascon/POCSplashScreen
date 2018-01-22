@@ -61,10 +61,16 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
     @Override
     public void showProducts() {
         toolbar.setTitle(getString(R.string.hello_products_fragment));
+        ProductsFragment productsFragment = new ProductsFragment();
+        FragmentManager manager = getSupportFragmentManager();
+        manager.beginTransaction().replace(R.id.frame_container, productsFragment).commit();
     }
 
     @Override
     public void showChat() {
         toolbar.setTitle(getString(R.string.hello_chat_fragment));
+        ChatFragment chatFragment = new ChatFragment();
+        FragmentManager manager = getSupportFragmentManager();
+        manager.beginTransaction().replace(R.id.frame_container, chatFragment).commit();
     }
 }
