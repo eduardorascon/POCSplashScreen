@@ -11,4 +11,12 @@ public class MainActivityPresenter {
     public void showMap() {
         view.showMap();
     }
+
+    public void showChat() {
+        view.showChat();
+    }
+
+    public void showProducts() {
+        view.showProducts();
+    }
 }

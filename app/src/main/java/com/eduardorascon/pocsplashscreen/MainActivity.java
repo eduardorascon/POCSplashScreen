@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
 
                         switch (item.getItemId()) {
                             case R.id.action_products:
-                                toolbar.setTitle(getString(R.string.title_products));
+                                presenter.showProducts();
                                 break;
                             case R.id.action_chat:
-                                toolbar.setTitle(getString(R.string.hello_chat_fragment));
+                                presenter.showChat();
                                 break;
                             case R.id.action_map:
                                 presenter.showMap();
@@ -60,11 +60,11 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
 
     @Override
     public void showProducts() {
-
+        toolbar.setTitle(getString(R.string.hello_products_fragment));
     }
 
     @Override
     public void showChat() {
-
+        toolbar.setTitle(getString(R.string.hello_chat_fragment));
     }
 }
