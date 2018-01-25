@@ -1,5 +1,6 @@
 package com.eduardorascon.pocsplashscreen;
 
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
@@ -8,7 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements MainActivityView {
+public class MainActivity extends AppCompatActivity implements MainActivityView,
+        ChatFragment.OnFragmentInteractionListener, ProductsFragment.OnFragmentInteractionListener {
 
     private ActionBar toolbar;
     private MainActivityPresenter presenter;
@@ -72,5 +74,10 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
         ChatFragment chatFragment = new ChatFragment();
         FragmentManager manager = getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.frame_container, chatFragment).commit();
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }
