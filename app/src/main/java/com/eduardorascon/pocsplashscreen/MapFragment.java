@@ -42,9 +42,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
-        LatLng ll = new LatLng(11, 104);
+        LatLng ll = new LatLng(19.376701, -99.1801836);
         MarkerOptions options = new MarkerOptions();
-        options.position(ll).title("Phnom");
+        options.position(ll).title("Home");
         map.addMarker(options);
         map.moveCamera(CameraUpdateFactory.newLatLng(ll));
     }
