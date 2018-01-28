@@ -18,22 +18,13 @@ android {
     }
     flavorDimensions "client", "plan"
     productFlavors {
-        gold {
-            dimension "plan"
-        }
-        silver {
-            dimension "plan"
-        }
         bronze {
             dimension "plan"
         }
         tesselapps {
             dimension "client"
         }
-        hogaza {
-            dimension "client"
-        }
-        burritomx {
+        starbucks {
             dimension "client"
         }
     }
