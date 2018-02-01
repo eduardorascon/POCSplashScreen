@@ -1,8 +1,8 @@
 package com.eduardorascon.pocsplashscreen.database;
 
-/**
- * Created by lalo-cota on 1/31/18.
- */
+import android.arch.persistence.room.Dao;
 
-public abstract class ProductDao {
+
+@Dao
+public interface ProductDao {
 }
