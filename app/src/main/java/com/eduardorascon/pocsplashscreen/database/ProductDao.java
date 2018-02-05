@@ -12,6 +12,6 @@ public interface ProductDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Product product);
 
-    @Query("SELECT * FROM word_table ORDER BY word ASC")
+    @Query("SELECT * FROM products ORDER BY word ASC")
     List<Product> getAllProducts();
 }
