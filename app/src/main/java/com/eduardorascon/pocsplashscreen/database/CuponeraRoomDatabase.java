@@ -7,9 +7,13 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
+import java.nio.file.attribute.PosixFilePermissions;
+
 @Database(entities = {Product.class}, version = 1)
 public abstract class CuponeraRoomDatabase extends RoomDatabase {
     private static CuponeraRoomDatabase INSTANCE;
+
+    public abstract ProductDao productDao();
 
     public static CuponeraRoomDatabase getDatabase(final Context context) {
         if (INSTANCE != null)
@@ -32,6 +36,7 @@ public abstract class CuponeraRoomDatabase extends RoomDatabase {
         @Override
         public void onOpen(@NonNull SupportSQLiteDatabase db) {
             super.onOpen(db);
+            new PopulateDatabaseAsync(INSTANCE).execute();
         }
     };
 }
