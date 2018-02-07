@@ -8,16 +8,23 @@ import android.support.annotation.NonNull;
 @Entity(tableName = "products")
 public class Product {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "product_id")
+    private long mId;
+
     @NonNull
     @ColumnInfo(name = "product_name")
-    private String mProduct;
+    private String mProductName;
 
-    public Product(String product) {
-        this.mProduct = product;
+    public Product(String productName) {
+        this.mProductName = productName;
     }
 
     public String getProduct() {
-        return mProduct;
+        return mProductName;
+    }
+
+    public long getId() {
+        return mId;
     }
 }
