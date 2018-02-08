@@ -10,21 +10,21 @@ public class Product {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "product_id")
-    private long mId;
+    private long id;
 
     @NonNull
     @ColumnInfo(name = "product_name")
-    private String mProductName;
+    private String productName;
 
     public Product(String productName) {
-        this.mProductName = productName;
+        this.productName = productName;
     }
 
     public String getProduct() {
-        return mProductName;
+        return productName;
     }
 
     public long getId() {
-        return mId;
+        return id;
     }
 }
