@@ -16,15 +16,20 @@ public class Product {
     @ColumnInfo(name = "product_name")
     private String productName;
 
-    public Product(String productName) {
-        this.productName = productName;
+    public long getId() {
+        return id;
     }
 
-    public String getProduct() {
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @NonNull
+    public String getProductName() {
         return productName;
     }
 
-    public long getId() {
-        return id;
+    public void setProductName(@NonNull String productName) {
+        this.productName = productName;
     }
 }
