@@ -16,6 +16,10 @@ public class Product {
     @ColumnInfo(name = "product_name")
     private String productName;
 
+    public Product(String productName) {
+        this.productName = productName;
+    }
+
     public long getId() {
         return id;
     }
