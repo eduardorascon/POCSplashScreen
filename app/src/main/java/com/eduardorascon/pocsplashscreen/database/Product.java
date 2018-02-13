@@ -16,6 +16,10 @@ public class Product {
     @ColumnInfo(name = "product_name")
     private String productName;
 
+    @NonNull
+    @ColumnInfo(name = "product_description")
+    private String productDescription;
+
     public Product(String productName) {
         this.productName = productName;
     }
@@ -35,5 +39,14 @@ public class Product {
 
     public void setProductName(@NonNull String productName) {
         this.productName = productName;
+    }
+
+    @NonNull
+    public String getProductDescription() {
+        return productDescription;
+    }
+
+    public void setProductDescription(@NonNull String productDescription) {
+        this.productDescription = productDescription;
     }
 }
