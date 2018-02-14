@@ -16,6 +16,8 @@ public class Category {
     @ColumnInfo(name = "category_name")
     private String categoryName;
 
+    private long productId;
+
     public Category(String categoryName) {
         this.categoryName = categoryName;
     }
@@ -35,5 +37,13 @@ public class Category {
 
     public void setCategoryName(@NonNull String categoryName) {
         this.categoryName = categoryName;
+    }
+
+    public long getProductId() {
+        return productId;
+    }
+
+    public void setProductId(long productId) {
+        this.productId = productId;
     }
 }
