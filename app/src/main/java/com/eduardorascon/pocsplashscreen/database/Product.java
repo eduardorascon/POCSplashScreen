@@ -2,10 +2,17 @@ package com.eduardorascon.pocsplashscreen.database;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
 
-@Entity(tableName = "products")
+@Entity(
+        tableName = "products",
+        foreignKeys = @ForeignKey(
+                entity = Category.class,
+                childColumns = "category_id",
+                parentColumns = "category_id",
+                onDelete = ForeignKey.SET_NULL))
 public class Product {
 
     @PrimaryKey(autoGenerate = true)
@@ -19,6 +26,9 @@ public class Product {
     @NonNull
     @ColumnInfo(name = "product_description")
     private String productDescription;
+
+    @ColumnInfo(name = "category_id")
+    private long categoryId;
 
     public Product(String productName) {
         this.productName = productName;
@@ -48,5 +58,13 @@ public class Product {
 
     public void setProductDescription(@NonNull String productDescription) {
         this.productDescription = productDescription;
+    }
+
+    public long getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(long categoryId) {
+        this.categoryId = categoryId;
     }
 }
