@@ -3,9 +3,6 @@ package com.eduardorascon.pocsplashscreen.database;
 import android.arch.persistence.room.Embedded;
 import android.arch.persistence.room.Relation;
 
-import com.eduardorascon.pocsplashscreen.database.Category;
-import com.eduardorascon.pocsplashscreen.database.Product;
-
 import java.util.List;
 
 public class CategoryAllProducts {
