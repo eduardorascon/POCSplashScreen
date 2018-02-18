@@ -1,7 +1,17 @@
-public class CategoryAllProducts {
-	@Embedded
-	private Category category;
+package com.eduardorascon.pocsplashscreen.database;
 
-	@Relation(parentColumn = "category_id", entityColumn = "category_id", entity = Product.class)
-	private List<Product> products;
+import android.arch.persistence.room.Embedded;
+import android.arch.persistence.room.Relation;
+
+import com.eduardorascon.pocsplashscreen.database.Category;
+import com.eduardorascon.pocsplashscreen.database.Product;
+
+import java.util.List;
+
+public class CategoryAllProducts {
+    @Embedded
+    private Category category;
+
+    @Relation(parentColumn = "category_id", entityColumn = "category_id", entity = Product.class)
+    private List<Product> products;
 }
