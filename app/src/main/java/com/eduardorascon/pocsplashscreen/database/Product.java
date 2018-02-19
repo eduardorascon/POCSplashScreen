@@ -30,6 +30,12 @@ public class Product {
     @ColumnInfo(name = "category_id")
     private long categoryId;
 
+    public Product(String productName, String productDescription, long categoryId) {
+        this.productName = productName;
+        this.productDescription = productDescription;
+        this.categoryId = categoryId;
+    }
+
     public Product(String productName) {
         this.productName = productName;
     }
@@ -47,24 +53,13 @@ public class Product {
         return productName;
     }
 
-    public void setProductName(@NonNull String productName) {
-        this.productName = productName;
-    }
-
     @NonNull
     public String getProductDescription() {
         return productDescription;
-    }
-
-    public void setProductDescription(@NonNull String productDescription) {
-        this.productDescription = productDescription;
     }
 
     public long getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(long categoryId) {
-        this.categoryId = categoryId;
-    }
 }
