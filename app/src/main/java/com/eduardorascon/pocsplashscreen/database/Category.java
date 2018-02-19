@@ -32,9 +32,4 @@ public class Category {
     public String getCategoryName() {
         return categoryName;
     }
-
-    public void setCategoryName(@NonNull String categoryName) {
-        this.categoryName = categoryName;
-    }
-
 }
