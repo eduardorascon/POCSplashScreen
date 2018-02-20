@@ -17,7 +17,7 @@ public class Product {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "product_id")
-    private long id;
+    public long id;
 
     @NonNull
     @ColumnInfo(name = "product_name")
@@ -38,14 +38,6 @@ public class Product {
 
     public Product(String productName) {
         this.productName = productName;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     @NonNull

@@ -10,7 +10,7 @@ public class Category {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "category_id")
-    private long id;
+    public long id;
 
     @NonNull
     @ColumnInfo(name = "category_name")
@@ -18,14 +18,6 @@ public class Category {
 
     public Category(String categoryName) {
         this.categoryName = categoryName;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     @NonNull
