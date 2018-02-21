@@ -12,8 +12,8 @@ import java.nio.file.attribute.PosixFilePermissions;
 @Database(entities = {Product.class, Category.class}, version = 1)
 public abstract class CuponeraRoomDatabase extends RoomDatabase {
     private static CuponeraRoomDatabase INSTANCE;
-
     public abstract ProductDao productDao();
+    public abstract CategoryDao categoryDao();
 
     public static CuponeraRoomDatabase getDatabase(final Context context) {
         if (INSTANCE != null)
