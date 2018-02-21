@@ -15,6 +15,9 @@ public interface ProductDao {
     @Query("DELETE FROM products")
     void deleteAll();
 
+    @Delete
+    void delete(Product product);
+
     @Query("SELECT * FROM products ORDER BY product_name ASC")
     List<Product> getAllProducts();
 }
