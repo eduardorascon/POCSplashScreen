@@ -36,10 +36,6 @@ public class Product {
         this.categoryId = categoryId;
     }
 
-    public Product(String productName) {
-        this.productName = productName;
-    }
-
     @NonNull
     public String getProductName() {
         return productName;
